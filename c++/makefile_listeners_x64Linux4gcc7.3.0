@@ -42,7 +42,7 @@ COMPILER_FLAGS = -m64 -Wall $(ADDITIONAL_COMPILER_FLAGS) -std=c11
 ifndef LINKER
 LINKER = $(COMPILER_PATH)$(GCC_PREFIX)g++
 endif
-LINKER_FLAGS = -m64 $(ADDITIONAL_LINKER_FLAGS) -Wl,--no-as-needed
+LINKER_FLAGS = -m64 $(ADDITIONAL_LINKER_FLAGS) -Wl,--no-as-needed -std=c11
 SYSLIBS = -ldl -lm -lpthread -lrt
 DEFINES = -DRTI_UNIX -DRTI_LINUX -DRTI_64BIT -D__cplusplus 
 ifndef DEBUG
