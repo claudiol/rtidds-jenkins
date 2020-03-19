@@ -44,7 +44,7 @@ LINKER = $(COMPILER_PATH)$(GCC_PREFIX)g++
 endif
 LINKER_FLAGS = -m64 $(ADDITIONAL_LINKER_FLAGS) -Wl,--no-as-needed -std=c++11
 SYSLIBS = -ldl -lm -lpthread -lrt
-DEFINES = -DSHAREDLIB -DRTI_UNIX -DRTI_LINUX -DRTI_64BIT -D__cplusplus 
+DEFINES = -DRTI_STATIC -DRTI_UNIX -DRTI_LINUX -DRTI_64BIT -D__cplusplus 
 ifndef DEBUG
 DEBUG=0 
 endif
