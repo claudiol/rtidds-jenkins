@@ -50,7 +50,7 @@ DEBUG=0
 endif
 ifeq ($(DEBUG),1)
 COMPILER_FLAGS += -g -O0
-LINKER_FLAGS += -g
+LINKER_FLAGS += -g -fabi-compat-version=2
 DEBUG_SFX = d
 else
 DEBUG_SFX = 
